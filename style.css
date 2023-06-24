@@ -1,27 +1,32 @@
 body {
-    height: 100vh;
     margin: 0;
     display: flex;
     flex-direction: column;
 }
 
 body > * {
-    padding: 0 5rem;
+    padding: 0 5rem 3rem 5rem;
 }
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-grow: 0;
     flex-basis: 50px;
+    padding-bottom: 0;
     background: #1F2937;
     color: #E5E7EB;
+    border-bottom: 1px solid black;
 }
 
 header a {
     color: #F9FAF8;
     font-size: 24px;
+}
+
+header a img {
+    width: 35px;
+    height: auto;
 }
 
 .nav-list ul {
@@ -36,10 +41,15 @@ a {
     font-size: 18px;
 }
 
+a:hover {
+    color: darkslateblue;
+}
+
 section {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    gap: 250px;
     background: #1F2937;
     color: #E5E7EB;
 }
@@ -48,8 +58,13 @@ section {
     flex:0 1 375px;
 }
 
+.intro button {
+    margin-top: 1rem;
+}
+
 section img {
-    width: 150px;
+    padding-top: 1rem;
+    width: 200px;
     height: auto;
 }
 
@@ -64,6 +79,12 @@ h2 {
     font-size: 36px;
     font-weight: bolder;
 }
+
+h3 {
+    margin-top: 0;
+    font-style: italic;
+}
+
 .card-display h2 {
     text-align: center;
 }
@@ -78,6 +99,7 @@ h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    flex-basis: 200px;
 }
 
 .card img {
@@ -86,7 +108,7 @@ h2 {
 }
 
 .card-text {
-    padding: 2rem;
+    padding: 1rem;
 }
 
 .statement {
@@ -97,19 +119,44 @@ h2 {
     font-weight: lighter;
 }
 
+p {
+    margin-bottom: 0;
+}
+
+.statement div {
+    text-align: end;
+    font-size: 26px;
+}
+
 .call-to-action {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border: #1F2937 3px solid;
+    border-radius: 50px;
+    margin-top: 3rem;
+    padding: 0 5rem;
+}
+
+.call-to-action a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 35px;
+    color: #1F2937;
+    background-color: #E5E7EB;
+    border: #1F2937 3px solid;
+    border-radius: 10px;
 }
 
 footer {
     display: flex;
-    flex-grow: 0;
-    flex-basis: 50px;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    flex-basis: 50px;
     background: #1F2937;
     color: #E5E7EB;
     font-size: 18px;
+    padding: 0;
 }
